@@ -19,5 +19,7 @@ Output = (Out_max - Out_min) / (P_max - P_min) * (Pressure - P_min) + Output_min
 ```
 
 # TODO: Implement to csv file flash writing
-This is an example for C
+This is an example for C:
 https://github.com/raspberrypi/pico-examples/blob/master/flash/program/flash_program.c
+Example for MicroPython:
+https://www.raspberrypi.org/forums/viewtopic.php?f=146&t=304757
