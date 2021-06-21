@@ -17,3 +17,7 @@ Go to Tools >> Board >> Raspberry Pi RP2040 Boards and select Raspberry Pi Pico.
 ```
 Output = (Out_max - Out_min) / (P_max - P_min) * (Pressure - P_min) + Output_min
 ```
+
+# TODO: Implement to csv file flash writing
+This is an example for C
+https://github.com/raspberrypi/pico-examples/blob/master/flash/program/flash_program.c
