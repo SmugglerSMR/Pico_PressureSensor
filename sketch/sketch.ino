@@ -61,7 +61,7 @@ void loop() {
                 / (outputmax - outputmin) + pmin;
     dtostrf(press_counts, 5, 0, cBuff);
     dtostrf(percentage, 5, 4, percBuff);
-    dtostrf(pressure, 5, 4, pBuff);
+    dtostrf(pressure, 6, 5, pBuff);
     dtostrf(temperature, 4, 3, tBuff);
 
     /*
