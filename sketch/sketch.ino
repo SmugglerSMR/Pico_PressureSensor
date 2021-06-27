@@ -19,12 +19,12 @@ char printBuffer[200], cBuff[40], percBuff[40]  , pBuff[40];
 
 
 void setup() {
-    Serial.begin(9600);
+    Serial.begin(115200);
     while(!Serial) {
         delay(10);
     }
     sprintf(printBuffer,
-"\nStatus Register, 24-bit Sensor data, Digital Pressure Counts, Percentage of full scale pressure,Pressure Output\r\n");
+"\n24-bit Sensor data, Digital Pressure Counts, Percentage of full scale pressure, Pressure\r\n");
     Serial.println(printBuffer);
     SPI.begin();
     pinMode(10, OUTPUT);          // pin 10 as SS
@@ -86,7 +86,7 @@ void loop() {
     
     if(BIT_IS_SET(data[0], 2)){
       sprintf(printBuffer,
-        "!! Test Failed");
+        "!! Integrity Test Failed");
       Serial.println(printBuffer);
     } 
     {
